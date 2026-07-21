@@ -43,7 +43,7 @@ class Geenii < Formula
 
         def install
           libexec.install Dir["*"]
-          bin.install_symlink libexec/"geenii"
+          bin.install_symlink libexec/"geenii/geenii"
         end
       end
     end
