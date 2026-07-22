@@ -1,12 +1,12 @@
 class Geenii < Formula
   desc "geenii"
   homepage "https://github.com/fm-labs/geenii"
-  version "0.3.4"
+  version "0.3.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fm-labs/geenii/releases/download/v0.3.4/geenii-darwin-amd64-v0.3.4.tar.gz"
-      sha256 "e15ccec86ece5496a1f953880396e6eca2319fe7544f38d072cfba272adc4726"
+      url "https://github.com/fm-labs/geenii/releases/download/v0.3.4.1/geenii-darwin-amd64-v0.3.4.1.tar.gz"
+      sha256 "176f5d0e589065f0908c452f40d070a75246c864168b3fd028fcd68cc3b9f5d2"
 
       def install
         libexec.install Dir["*"]
@@ -14,8 +14,8 @@ class Geenii < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fm-labs/geenii/releases/download/v0.3.4/geenii-darwin-arm64-v0.3.4.tar.gz"
-      sha256 "6d147761b2e3cf272a2001e9616dfe33f968049c7624eb088d5cba40633edbe1"
+      url "https://github.com/fm-labs/geenii/releases/download/v0.3.4.1/geenii-darwin-arm64-v0.3.4.1.tar.gz"
+      sha256 "770bf98e8f98c4361a66eb096aecdf5ee1af15bf97b0da3c58728fc093c42b0c"
 
       def install
         libexec.install Dir["*"]
@@ -27,8 +27,8 @@ class Geenii < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/fm-labs/geenii/releases/download/v0.3.4/geenii-linux-amd64-v0.3.4.tar.gz"
-        sha256 "77ef3721f41750a7e2a3e0a218ff0a5e36ef31ba11a89abc4b63135d6000ee4e"
+        url "https://github.com/fm-labs/geenii/releases/download/v0.3.4.1/geenii-linux-amd64-v0.3.4.1.tar.gz"
+        sha256 "77447d5a85a61b8c2c1bb4343ce8222f5e15dd2c543a0d0473815c9bd2893b07"
 
         def install
           libexec.install Dir["*"]
@@ -38,8 +38,8 @@ class Geenii < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/fm-labs/geenii/releases/download/v0.3.4/geenii-linux-arm64-v0.3.4.tar.gz"
-        sha256 "e94673cbc7bb1eb17fbdc8c0347a6e60f80b272290b34a19712382fe03af0ef7"
+        url "https://github.com/fm-labs/geenii/releases/download/v0.3.4.1/geenii-linux-arm64-v0.3.4.1.tar.gz"
+        sha256 "0f9608476b882da924def84c2881387e04afe9a416118a1fc78ac05da4dc3479"
 
         def install
           libexec.install Dir["*"]
